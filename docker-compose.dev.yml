@@ -12,7 +12,9 @@ services:
     # env_file:
     #   - /src/environments/.env.development
     environment:
-      APP_NAME: Netflix_Movie_frontend-angular
+      APP_NAME: Netflix_Movie_Frontend-Angular
+      CHOKIDAR_USEPOLLING: true       # 👈 Enables reliable file watching in Docker
+      WATCHPACK_POLLING: true          # 👈 Helps Webpack detect file changes
     volumes:
       - .:/netflix_movie_frontend_angular          # mount local source code
       - /netflix_movie_frontend_angular/node_modules  # keep container’s node_modules separate
