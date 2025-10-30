@@ -1,0 +1,20 @@
+# docker-compose.dev.yml
+
+services:
+  app: 
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: netflix-movie-frontend-angular
+    ports:
+      - "4200:4200"
+    restart: always
+    # env_file:
+    #   - /src/environments/.env.development
+    environment:
+      APP_NAME: Netflix_Movie_frontend-angular
+    volumes:
+      - .:/netflix_movie_frontend_angular          # mount local source code
+      - /netflix_movie_frontend_angular/node_modules  # keep container’s node_modules separate
+    
+    command: npm run start:docker:dev
