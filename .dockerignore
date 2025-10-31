@@ -1,10 +1,35 @@
-# Ignore local data and build files
-# volumes/mongodb
+# -----------------------------
+# Docker Ignore Configuration
+# -----------------------------
+
+# Node modules (will be reinstalled inside Docker)
 node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Git and version control
 .git
+.gitignore
+
+# Docker files (not needed inside build context)
 Dockerfile*
 docker-compose*.yml
-npm-debug.log
 
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# Angular build outputs
+dist
+build
+.tmp
+coverage
+
+# Local environment and runtime data
 volumes
 documents
+
+# IDE / editor configs
+.vscode
+.idea

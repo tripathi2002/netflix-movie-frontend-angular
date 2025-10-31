@@ -17,6 +17,6 @@ services:
       WATCHPACK_POLLING: true          # 👈 Helps Webpack detect file changes
     volumes:
       - .:/netflix_movie_frontend_angular          # mount local source code
-      - /netflix_movie_frontend_angular/node_modules  # keep container’s node_modules separate
+      - /netflix_movie_frontend_angular/node_modules
     
     command: npm run start:docker:dev

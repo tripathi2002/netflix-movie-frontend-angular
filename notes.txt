@@ -15,3 +15,7 @@ docker compose -f docker-compose.dev.yml logs -f app
 docker ps
 
 -------------------------------
+
+PS C:\WINDOWS\system32> Get-ExecutionPolicy
+Restricted
+PS C:\WINDOWS\system32> Set-ExecutionPolicy Unrestricted

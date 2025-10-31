@@ -96,11 +96,15 @@
               }
             ],
             "styles": [
+              "src/sass/main.scss",
               "src/styles.scss"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

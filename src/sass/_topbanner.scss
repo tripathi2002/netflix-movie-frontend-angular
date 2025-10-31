@@ -1,0 +1,70 @@
+.topNav {
+    min-height: 450px;
+
+    .top-banner-col {
+        padding: 180px 0 110px 0;
+
+        @include max(991) {
+            padding: 100px 0 0px 0;
+        }
+
+        h1 {
+            color: #FFF;
+            font-family: 'Manrope' , sans-serif;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2;
+
+            @include max(767) {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            color: #FFF;
+            font-family: 'Manrope' , sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 20px 0 35px 0;
+
+            @include max(767) {
+                font-size: 16px;
+                padding: 20px 0 25px 0;
+            }
+        }
+
+        span{
+            color: #fff;
+        }
+
+    }
+
+    .primitive {
+        position: relative; height: 100%;
+        //top: 100px;
+        //height: 450px; //pointer-events: none;
+
+        @include max(991) {
+            //top: 100px;
+            //height: 320px;
+        }
+
+        @include max(767) {
+            //top: 50px;
+        }
+        canvas{ width: 100% !important; height: 100% !important;}
+        img{max-width: 380px; position: absolute;  bottom: -130px; right: 60px;
+            @include max(991) {
+                max-width: 380px; position: relative; bottom: 0; right: 0; left: 0px; margin: 30px auto -40px auto; width: 100%; display: block;
+            }
+            @include max(575) {max-width: 230px;}
+        }
+    }
+
+    .global-btn {
+        padding: 10px 60px;
+    }
+}

@@ -1,0 +1,41 @@
+.global-btn {
+    cursor: pointer;
+    color: #FFF;
+    font-family: 'Manrope' , sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    // width: 245px;
+    padding: 8px 17px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: #FD0095;
+    border: 1px solid #FD0095;
+    text-decoration: none;
+    transition: all .5s ease;
+
+    @include max(767){font-size: 16px;}
+
+    &.xl{
+        padding: 8px 40px;
+        @include max(767){padding: 8px 30px;}
+    }
+    
+    svg{
+        fill: #000000;
+        transition: all .5s ease;
+        height: 14px;
+    }
+
+    &:hover {
+        background-color: #fff;
+        color: #FD0095;
+
+        svg {
+            fill: #FD0095;
+        }
+    }
+}

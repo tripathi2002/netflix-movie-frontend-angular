@@ -1,0 +1,149 @@
+
+.ant-select-selection-search{
+    inset-inline-start:0px !important;
+    inset-inline-end:0px !important
+}
+
+.inputholder {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+
+    input:not([type="checkbox"]) {
+        background-color: #f3f3f3;
+        border: none;
+        border-bottom: 1px solid black;
+        color: #FD0095;
+        height: 40px;
+        outline-offset: 10px;
+        outline-color: rgba(255, 0, 149, 0.3);
+        width: 100%;
+
+        &+label {
+            color: #000000;
+            font-size: 1.8rem;
+            font-weight: 500;
+            left: 0;
+            position: absolute;
+            top: 7px;
+            transition: all ease 0.35s;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            &+label {
+                font-size: 1.4rem;
+                top: -9px;
+            }
+        }
+    }
+
+    &.select {
+        .ant-select {
+            background-color: #f3f3f3;
+            border: none;
+            border-bottom: 1px solid black;
+            color: #FD0095;
+            height: 40px;
+            outline-offset: 10px;
+            outline-color: rgba(255, 0, 149, 0.3);
+            width: 100%;
+
+            &+label {
+                color: #000000;
+                font-size: 1.4rem;
+                font-weight: 500;
+                left: 0;
+                position: absolute;
+                top: -9px;
+                transition: all ease 0.35s;
+            }
+
+            // &.ant-select-open {
+            //     &+label {
+            //         font-size: 1.4rem;
+            //         top: -9px;
+            //     }
+            // }
+
+            // &.ant-select-open {
+            //     &+label {
+            //         font-size: 1.4rem;
+            //         top: -9px;
+            //     }
+            // }
+            .ant-select-selector{padding: 0px !important;}
+            .ant-select-selection-item{padding-inline-end: 0;color: #FD0095;font-size: 1.6rem;}
+            .ant-select-arrow{ width: 20px;
+                svg{
+                    path{fill: #000000;}
+                }
+            }
+        }
+
+    }
+
+    &.checkbox {
+        input[type="checkbox"] {
+            display: none;
+
+            &+label {
+                color: #000;
+                cursor: pointer;
+                display: flex;
+                font-size: 1.4rem;
+                font-weight: 300;
+                line-height: 1.2;
+                gap: 15px;
+
+                .check {
+                    align-items: center;
+                    border: 1px solid #000000;
+                    display: inline-flex;
+                    flex-shrink: 0;
+                    height: 18px;
+                    justify-content: center;
+                    margin-top: 3px;
+                    padding: 3px;
+                    width: 18px;
+
+                    svg {
+                        display: none;
+                        fill: #FD0095;
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+            }
+
+            &:checked {
+                &+label {
+                    .check {
+                        svg {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // &+.inputholder {
+    //     margin-top: 30px;
+    // }
+
+    .error {
+        font-size: 14px;
+        line-height: normal;
+        margin: 5px 0 0 0;
+        display: block;
+        color: #ff0000;
+    }
+}
+
+
+.btnwrap {
+    margin-top: 30px;
+}
+
+// ant-select ant-select-borderless css-dev-only-do-not-override-nllxry ant-select-single ant-select-show-arrow

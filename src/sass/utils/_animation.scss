@@ -1,0 +1,71 @@
+.animate{
+    @include min(991){
+        opacity: 0;
+        &.active{
+            &.fadeUp{
+                animation: fadeUp 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 forwards;
+            }
+            &.fadeLeft{
+                animation: fadeLeft 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 forwards;
+            }
+            &.fadeRight{
+                animation: fadeRight 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 forwards;
+            }
+            &.fadeUpSmall{
+                animation: fadeUpSmall 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s 1 forwards;
+            }
+        }
+    }
+}
+.rotate{
+    animation: rotate 1s linear 0s infinite forwards;
+}
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        @include translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        @include translateY(0px);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        @include translateX(300px);
+    }
+    100% {
+        opacity: 1;
+        @include translateX(0px);
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        @include translateX(-300px);
+    }
+    100% {
+        opacity: 1;
+        @include translateX(0px);
+    }
+}
+
+@keyframes fadeUpSmall {
+    0% {
+        opacity: 0;
+        @include translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        @include translateY(0px);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

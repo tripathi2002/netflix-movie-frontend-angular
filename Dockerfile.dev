@@ -3,10 +3,14 @@ FROM node:20-alpine
 WORKDIR /netflix_movie_frontend_angular
 
 COPY package*.json ./
+COPY . .
+
+# Install Angular CLI globally (so `ng` works in shell)
+RUN npm install -g @angular/cli
 
 RUN npm install
 
-COPY . .
+
 
 EXPOSE 4200
 # CMD ["ng", "serve"]

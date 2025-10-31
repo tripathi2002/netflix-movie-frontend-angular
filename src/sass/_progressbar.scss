@@ -1,0 +1,14 @@
+.pb-wrap{ padding:20px 15px 25px 15px; background: linear-gradient(0deg, rgba(17,17,17,0) 0%, rgba(255,255,255,1) 11%); position: sticky; top: 0; z-index: 9;
+    .txt-wrap{ display: flex; padding: 0 0 10px 0; justify-content: space-between; align-items: center;
+        .left{ font-size: 14px; color: #FD0095; line-height: 1.5; font-weight: 600;}
+        .right{font-size: 14px; color: #FD0095; line-height: 1.5; font-weight: 600;}
+    }
+    .progressbar-wrap{
+        background: #F3F3F3; height: 12px; border-radius: 15px; overflow: hidden;
+        .move{background: linear-gradient(84deg, #FD0095 5.59%, #4A1F69 105.54%); height: 12px; width: 50%; border-radius: 15px;}
+    }
+    .pb-logo{ padding: 0 0 40px 0;
+        @include max(991){padding: 0 0 20px 0;}
+        img{max-width: 138px;}
+    }
+}
