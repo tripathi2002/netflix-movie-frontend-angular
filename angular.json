@@ -36,6 +36,7 @@
               }
             ],
             "styles": [
+              "src/sass/main.scss",
               "src/styles.scss"
             ]
           },

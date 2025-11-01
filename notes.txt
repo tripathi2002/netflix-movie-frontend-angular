@@ -19,3 +19,9 @@ docker ps
 PS C:\WINDOWS\system32> Get-ExecutionPolicy
 Restricted
 PS C:\WINDOWS\system32> Set-ExecutionPolicy Unrestricted
+
+
+--------------------------------
+Figma :-
+https://www.figma.com/design/uaE9sS2cYwOFmQNHqiSDTJ/Netflix--Community-?node-id=0-1&p=f&t=PXrLbLKBk17Oh3Ql-0
+https://www.figma.com/design/5TVzbb7cDoj3ZpL7q7bFbk/NETFLIX-FIGMA-BY-VINAY-PALAKONDA--Community-?t=evuvG6aQJiLNhsha-0

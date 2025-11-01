@@ -1,0 +1,155 @@
+.main {
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  color: #fff;
+  background-image: url('/public/bg-login.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .container {
+    height: 100%;
+  }
+
+  section.login-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 15px;
+
+    .login-card__main {
+      // min-height: 60vh;
+      height: 100%;
+      width: 100%;
+      max-width: 400px;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 12px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .login-card__title {
+        // text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      .login-card__input-group {
+        margin-bottom: 1rem;
+        background-color: #d9d9d9;
+        color: #000;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+
+        .login-card__input {
+          max-width: 100%;
+          width: 100%;
+          border: none;
+          background-color: #d9d9d9;
+          // border-radius: 8px;
+          font-size: 2rem;
+        }
+
+        &--password {
+          .login-card__input-wrapper {
+            display: flex;
+            border-radius: 1rem;
+            overflow: hidden;
+
+            .login-card__input-eye {
+              width: 50px;
+              height: 100%;
+              background-color: #fff; // dark section on right (like your screenshot)
+              opacity: 50%;
+              background-image: url('/public/close_eye_image.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 24px 24px;
+              border: none;
+              cursor: pointer;
+              transition: background-image 0.2s ease;
+
+              &:hover {
+                background-image: url('/public/eye-open.svg');
+              }
+            }
+          }
+        }
+
+        &--button {
+          background-color: #e50914;
+          .login-card__input {
+            background-color: #e50914;
+            padding: 10px 0px;
+          }
+        }
+
+        &--checkbox {
+          background-color: transparent;
+          color: #6a6868;
+
+          .login-card__input-wrapper {
+            display: flex;
+            border-radius: 1rem;
+            overflow: hidden;
+            justify-content: space-between;
+            align-items: center;
+
+            .login-card__input-wrapper-left {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+
+          .login-card__input-help {
+            font-size: 1.2rem;
+          }
+
+          .login-card__input-title {
+            padding-left: 1rem;
+            min-width: max-content;
+            width: 100%;
+            font-size: 1.2rem;
+          }
+        }
+
+        .login-card__input:focus {
+          outline: none;
+        }
+      }
+
+      .login-card__content {
+        color: #6a6868;
+
+        &.login-card__content-signup {
+          margin-top: 2rem;
+          span {
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+
+        &.login-card__content-more {
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+          font-size: 1.2rem;
+          span {
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  section.header,
+  section.footer {
+    height: 10vh;
+  }
+}
