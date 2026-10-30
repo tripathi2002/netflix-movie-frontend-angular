@@ -47,4 +47,4 @@ Dockerfile
 docker-compose.yml
 
 # environments file 
-environment.*.ts
+environment.*.ts.vscode/
